@@ -19,4 +19,12 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('v1/addItem', views.add_item),
+    path('v1/removeItem', views.remove_item),
+    path('v1/removeItems', views.remove_items),
+    path('v1/newType', views.new_type),
+    path('v1/removeType', views.remove_type),
+    path('v1/addToShoppingList', views.add_to_shopping_list),
+    path('v1/removeFromShoppingList', views.remove_from_shopping_list),
+    path('v1/purchaseItem', views.purchase_item),
 ]
